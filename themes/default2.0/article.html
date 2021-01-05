@@ -126,7 +126,7 @@
 												<span class="meta-sep">|</span>
 												<span class="date updated">{{ &articleSingle.createDate10 }}</span></div>
 											<div class="adt-comment">
-												<span id="/article/000019/googledrive.html" class="leancloud_visitors">
+												<span id="{{ &articleSingle.url }}" class="leancloud_visitors">
 													<em class="post-meta-item-text">{{ &OPT.otherCodeA }}</em>
 													<i class="leancloud-visitors-count"></i>
 												</span>
@@ -142,9 +142,9 @@
 									<footer class="entry-meta">
 										<span>分类:
 											{{ #articleSingle.category }}
-												<a href="/category/{{&.}}	" rel="category tag">{{&.}}</a></span>
+												<a href="/category/{{&.}}" rel="category tag">{{&.}}</a>
 											{{ /articleSingle.category }}
-											
+										</span>	
 										<span>标签：
 											{{ #articleSingle.tags }}
 												<a href="/tags/{{&.}}" rel="tag">{{&.}} </a> 
